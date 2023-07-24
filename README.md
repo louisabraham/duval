@@ -47,7 +47,7 @@ print(duval(s))
 print(min_rotation(s))
 ```
 
-## C++ version
+## C++
 
 Simply include `duval-cpp/duval.hpp`.
 
@@ -65,7 +65,7 @@ int main()
 }
 ```
 
-## Rust version
+## Rust
 
 Code is provided in `duval-rs`.
 
