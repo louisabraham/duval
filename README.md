@@ -37,7 +37,7 @@ def min_rotation(s):
 
 Requires pybind11 (`pip install pybind11`).
 
-Install with `pip install .`
+Install with `pip install ./duval-py`
 
 ```python
 from duval import duval, min_rotation
@@ -50,7 +50,7 @@ print(min_rotation(s))
 
 ## C++ version
 
-Simply include `duval.hpp`.
+Simply include `duval-cpp/duval.hpp`.
 
 ```cpp
 #include <iostream>
@@ -77,7 +77,7 @@ We provide simple tests for the Python, C++ and Rust versions.
 ## C++
 
 
-`g++ --std=c++11 -O3 test.cpp -o test && ./test`
+`cd duval-cpp && g++ --std=c++11 -O3 test.cpp -o test && ./test && cd ..`
 
 We do extended testing for the C++ version with random strings against a very naive implementation. The random strings are generated with fixed seeds to ensure reproducibility.
 
@@ -85,13 +85,13 @@ We also display the performance. On our laptop, computing `min_rotation` for 100
 
 ## Python
 
-`python test.py`
+`python duval-py/test.py`
 
 We test both the pure Python and the C++ version and compare their performance.
 The Python version is about 150x slower than the C++ version.
 
 ## Rust
 
-`cargo test --release -- --nocapture`
+`cargo test --manifest-path=duval-rs/Cargo.toml --release -- --nocapture`
 
 The Rust version has about the same performance as the C++ version.
