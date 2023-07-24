@@ -46,7 +46,6 @@ s = "abracadabra"
 print(duval(s))
 print(min_rotation(s))
 ```
-```
 
 ## C++ version
 
