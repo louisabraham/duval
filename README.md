@@ -2,7 +2,7 @@
 
 We provide implementation of Duval algorithm for Lyndon factorization and smallest rotation computation in C++, Rust and Python.
 
-Our code for the Lyndon factorization is based on [this implementation](https://cp-algorithms.com/string/lyndon_factorization.html)
+Our code for the Lyndon factorization is based on [this implementation](https://cp-algorithms.com/string/lyndon_factorization.html).
 
 Our code for the smallest rotation computation is custom and highly optimized (for the C++ and Rust versions).
 
